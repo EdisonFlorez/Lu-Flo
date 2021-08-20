@@ -20,4 +20,8 @@ public class App_79 {
         //////////Fin de los llamados a los requerimientos
 
     }*/
+    public static void main(String[] args) {
+	    new MainWindow();
+        new QueryWindow("Proyectos.");
+    }
 }
