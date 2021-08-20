@@ -22,6 +22,6 @@ public class App_79 {
     }*/
     public static void main(String[] args) {
 	    new MainWindow();
-        new QueryWindow("Proyectos.");
+       // new QueryWindow("Proyectos.");
     }
 }
