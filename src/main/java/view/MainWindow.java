@@ -16,7 +16,7 @@ public class MainWindow extends JFrame{
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	        
 		frame.setSize(900,600);
         //CrearImagen
-        URL url = new URL("https://raw.githubusercontent.com/EdisonFlorez/Lu-Flo_Project/main/src/main/java/view/index.jpeg");
+        URL url = new URL("https://raw.githubusercontent.com/EdisonFlorez/Lu-Flo_Project/main/src/main/java/view/image.jpg");
         ImageIcon image = new ImageIcon(url);
         //BufferedImage myPicture = ImageIO.read(new File("\\index.jpeg"));
         //JLabel picLabel = new JLabel(new ImageIcon(myPicture));
