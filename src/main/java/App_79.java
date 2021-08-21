@@ -8,7 +8,7 @@ import view.*;
  */
 public class App_79 {
     public static void main(String[] args) throws IOException{
-	    //new MainWindow();
-        new Ventana();
+	    new MainWindow();
+        //new Ventana();
     }
 }
