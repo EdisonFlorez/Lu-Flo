@@ -1,10 +1,7 @@
 package view;
 import java.awt.*;
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
-import java.awt.image.*;
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.event.MouseInputAdapter;
 import java.awt.event.MouseEvent;
@@ -18,14 +15,28 @@ public class MainWindow extends JFrame{
         //CrearImagen
         URL url = new URL("https://raw.githubusercontent.com/EdisonFlorez/Lu-Flo_Project/main/src/main/java/view/image.jpg");
         ImageIcon image = new ImageIcon(url);
-        //BufferedImage myPicture = ImageIO.read(new File("\\index.jpeg"));
-        //JLabel picLabel = new JLabel(new ImageIcon(myPicture));
-        //add(picLabel);
+        Font button_Font = new Font("Faustina", Font.ITALIC, 20);
         //Crear botones
         JButton button1 = new JButton("Proyectos");
         JButton button2 = new JButton("Deducibles");
         JButton button3 = new JButton("Clientes");
+        button1.setOpaque(false);
+        button1.setContentAreaFilled(false);
+        button1.setBorderPainted(false);
+        button1.setFont(button_Font);
+        button1.setForeground(Color.white);
+        
+        button2.setOpaque(false); 
+        button2.setContentAreaFilled(false);
+        button2.setBorderPainted(false);
+        button2.setFont(button_Font);
+        button2.setForeground(Color.white);
 
+        button3.setOpaque(false);
+        button3.setContentAreaFilled(false);
+        button3.setBorderPainted(false);
+        button3.setFont(button_Font);
+        button3.setForeground(Color.white);
 
         button1.addMouseListener(new MouseInputAdapter(){
             @Override
@@ -76,6 +87,7 @@ public class MainWindow extends JFrame{
         button_box.add(button1);
         button_box.add(button2);
         button_box.add(button3);
+        button_box.setBackground(new Color(40, 40, 40));
 
         frame.add(new JLabel("", image, JLabel.CENTER));
         frame.add(BorderLayout.SOUTH, button_box);
